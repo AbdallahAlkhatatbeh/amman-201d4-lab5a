@@ -93,13 +93,20 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
+function sumArray(newarray) { //eslint-disable-line
+    var sumofarray = sumAndMultiply (newarray[0],newarray[1],newarray[2]);
+   var sumar =sumofarray[0];
+ 
+    
+    var message4= `${newarray[0]},${newarray[1]},${newarray[2]} was passed in as an array of numbers, and ${sumar} is their sum.`
+    
+    return [sumar,message4];
 
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+ testSumArray();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
