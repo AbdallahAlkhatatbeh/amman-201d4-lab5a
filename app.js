@@ -121,12 +121,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(newarray) { //eslint-disable-line
+    var mulofarray = sumAndMultiply (newarray[0],newarray[1],newarray[2]);
+    var mular =mulofarray[1];
+  
+     console.log(mular)
+     var message5= `The numbers ${newarray[0]},${newarray[1]},${newarray[2]} have a product of ${mular}.`
+     
+     return [ mular,message5];
+ 
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
